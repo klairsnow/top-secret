@@ -1,22 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
-  <!-- UPDATE THIS LINK for a different song -->
-  <meta http-equiv="refresh" content="0; url=https://youtu.be/CLQe3gbOORE?si=QJ9h608zSvbdYwmH">
+  <!-- Makes the page display properly on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CLASSIFIED</title>
+  <!-- Title shown in the browser/tab -->
+  <title>TOP SECRET</title>
+
+  <!-- UPDATE THIS LINK for a different song -->
+  <meta http-equiv="refresh"
+    content="3; url=https://youtu.be/CLQe3gbOORE?si=QJ9h608zSvbdYwmH">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+
+      /* Centre everything on the screen */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* Centre the text */
+      text-align: center;
+
+      font-family: Arial, sans-serif;
+      padding: 25px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.3;
+      margin: 0;
+    }
+  </style>
 </head>
 
 <body>
-  <p>Expect the unexpected… No turning back now. 😉</p>
+
+  <h1>
+    Expect the unexpected…<br>
+    No turning back now. 😉
+  </h1>
 
   <script>
-    // UPDATE THIS LINK for a different song
-    window.location.replace(
+    // Redirect to YouTube after 3 seconds
+    setTimeout(function () {
+       window.location.replace(
       "https://youtu.be/CLQe3gbOORE?si=QJ9h608zSvbdYwmH"
-    );
+      );
+    }, 3000);
   </script>
+
 </body>
+
 </html>
